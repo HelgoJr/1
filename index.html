@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人情报站 | IntelStation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Noto Sans SC', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              morandi: {
+                bg: '#F7F7F5',       // Off-white background
+                sidebar: '#F0EFEA',  // Slightly darker for sidebar
+                card: '#FFFFFF',     // Pure white for cards
+                border: '#E6E2D8',   // Soft beige border
+                text: {
+                  primary: '#4A4843', // Dark grey-brown
+                  secondary: '#8C8981', // Muted grey
+                  accent: '#5D5C61',    // Darker accent
+                },
+                palette: {
+                  blue: '#8FA3B8',
+                  green: '#9CAD95',
+                  clay: '#BFA6A8',
+                  sand: '#D6C7A1',
+                  purple: '#A89FAD',
+                  teal: '#86A69D',
+                  slate: '#707B8C'
+                }
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F7F7F5;
+        color: #4A4843;
+      }
+      /* Custom scrollbar for light theme */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #D1CEC7; 
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #B8B5AE; 
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-_tcbM__W.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
